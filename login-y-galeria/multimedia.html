@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+	<title>Galería de videos</title>
+</head>
+<body>
+	<h1>Galería de videos</h1>
+	<div class="container">
+		<div class="video">
+			<video src="op.mp4" controls></video>
+            <button onclick="eliminarVideo('op.mp4')">Eliminar</button>
+		</div>
+		<div class="video">
+			<video src="video2.mp4" controls></video>
+            <button onclick="eliminarVideo('video2')">Eliminar</button>
+		</div>
+		<div class="video">
+			<video src="video3.mp4" controls></video>
+            <button onclick="eliminarVideo('video3')">Eliminar</button>
+		</div>
+		<div class="video">
+			<video src="video4.mp4" controls></video>
+            <button onclick="eliminarVideo('video4')">Eliminar</button>
+		</div>
+	</div>
+	<input type="file" id="fileInput" style="display:none">
+    <!--Este boton es para agregar videos-->
+	<button onclick="document.getElementById('fileInput').click()">Agregar video</button>
+
+</body>
+</html>
+
+
