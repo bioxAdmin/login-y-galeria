@@ -1,17 +1,17 @@
-const fileInput = document.getElementById('fileInput');
-
-		fileInput.addEventListener('change', function() {
-			const file = fileInput.files[0];
-			const videoURL = URL.createObjectURL(file);
-			const videoDiv = document.createElement('div');
-			videoDiv.className = 'video';
-			videoDiv.innerHTML = '<video src="' + videoURL + '" controls></video>';
-			const container = document.querySelector('.container');
-			container.appendChild(videoDiv);
-		});
 
         function eliminarVideo(id) {
-			const videoDiv = document.getElementById(id);
+			var videoDiv = document.getElementById("id");
 			videoDiv.parentNode.removeChild(videoDiv);
 		}
-        
+		function agregarVideo() {
+			var videoInput = document.getElementById("video-input");
+			var video = document.createElement("video");
+			video.src = URL.createObjectURL(videoInput.files[0]);
+			video.controls = true;
+			document.body.appendChild(video);
+	 }
+		 function EliminarElemento() {
+			var eliminar = document.getElementById("idVideo");
+			
+	 	}
+		
